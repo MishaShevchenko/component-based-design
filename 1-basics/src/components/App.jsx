@@ -2,12 +2,14 @@ import { List } from './List';
 import { Button } from './Button';
 
 import './App.css';
+import Header from './Header';
 
 export const App = () => (
   <>
     <header>
-      <h1>Pokemon app</h1>
-      <Button>Click me</Button>
+      <Header>
+      </Header>   
+      <Button className='btn' label={'find me'}></Button>
     </header>
     <main>
       <List />

@@ -1,7 +1,7 @@
 import './Button.css';
 
-export const Button = (props) => {
-  console.log('props', props);
+export const Button = ({ label }) => {
+  console.log('props', label);
 
-  return <button className='btn'>{props.children}</button>;
+  return <button className='btn'>{label}</button>;
 };

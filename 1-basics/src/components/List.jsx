@@ -1,19 +1,15 @@
 import { Button } from './Button';
+import Item from './Item';
 
 const list = ['Pikachu', 'Bulbazaur', 'Charmander', 'Squirtle']
 
 export const List = () => (
-  <div>
+  <div className="list">
     <ul>
       {list.map((listItem) => (
-        <li key={listItem}>{listItem}</li>
-      ))}
+        <List key={listItem}/>))}
     </ul>
-    <ul>
-      <li>{list[0]}</li>
-      <li>{list[1]}</li>
-      <li>{list[2]}</li>
-    </ul>
-    <Button>Do it!</Button>
+
+    <Button label={"push it"}></Button>
   </div>
 );
