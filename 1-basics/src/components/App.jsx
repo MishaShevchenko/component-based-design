@@ -7,12 +7,12 @@ import Header from './Header';
 export const App = () => (
   <>
     <header>
-      <Header>
-      </Header>   
-      <Button className='btn' label={'find me'}></Button>
+      <Header></Header>
+      <Button label={"find me"}></Button>
     </header>
     <main>
       <List />
+      <Button label={"push it"}></Button>
     </main>
   </>
 );

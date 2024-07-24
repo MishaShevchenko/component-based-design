@@ -1,3 +1,21 @@
 ul {
     margin-left: 2rem;
 }
+.items{
+        list-style-type:  none;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        color: aqua;
+}
+img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+.cards {
+    display: flex;
+}
+p{
+    font-size: 2rem;
+    color:blue;
+}

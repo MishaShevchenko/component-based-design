@@ -1,6 +1,12 @@
-const list = ["Pikachu", "Bulbazaur", "Charmander", "Squirtle"];
 import "./Item.css";
-const Item = (listItem) => {
-  return <li>{listItem}</li>;
+const Item = ({ name, image, id}) => {
+    return (
+      <div className="cards">
+        <li className="items">{name}</li>
+            <img src={image} alt="name" />
+            <p>{id }</p>
+      </div>
+    );
+
 };
 export default Item;
