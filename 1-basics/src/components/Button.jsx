@@ -1,11 +1,12 @@
 import './Button.css';
 
-export const Button = ({ label }) => {
-  // console.log('props', label);
- 
+ const Button = ({ label,id,getCard }) => {
+   // console.log('props', label);
+
   return (
-    <div className='button'>
-      <button className="btn">{label}</button>
+    <div className="button">
+      <button onClick={() => getCard(id)} className="btn">{label}</button>
     </div>
   );
 };
+export default Button

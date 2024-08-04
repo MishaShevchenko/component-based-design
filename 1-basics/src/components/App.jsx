@@ -1,8 +1,9 @@
 import { List } from './List';
-import { Button } from './Button';
+import  Button  from './Button';
 
 import './App.css';
 import Header from './Header';
+import Footer from './Footer';
 
 export const App = () => (
   <>
@@ -12,7 +13,9 @@ export const App = () => (
     </header>
     <main>
       <List />
-      <Button label={"push it"}></Button>
     </main>
+    <footer>
+      <Footer/>
+    </footer>
   </>
 );

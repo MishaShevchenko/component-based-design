@@ -10,12 +10,25 @@ ul {
 }
 img {
     width: 3rem;
+    height: max-content;
     margin-right: 1rem;
 }
 .cards {
     display: flex;
+    align-items: center;
+    position: relative;
+    height: 8rem;
+    width: 5rem;
 }
 p{
-    font-size: 2rem;
-    color:blue;
+    position: absolute;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    top: 0;
+    left: 0;
+    padding: 0.75rem;
+    background: #c35600;
+    border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    color: white;
 }

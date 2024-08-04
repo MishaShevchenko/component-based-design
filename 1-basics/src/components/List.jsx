@@ -1,5 +1,5 @@
-import { Button } from "./Button";
 import Item from "./Item";
+import Button from "./Button";
 const list = [
   {
     id: 1,
@@ -26,22 +26,29 @@ const list = [
       "https://i.pinimg.com/736x/00/73/cb/0073cbf3151b39fcfbdeff81c04d29bb.jpg",
   },
 ];
+
 const getCard = (id) => {
-  list.find((card) => card.id === id);
-  console.log(card);
+  const card = list.find((card) => card.id === id);
+  if (card) {
+    console.log("Card found:", card);
+  } else {
+    console.log("Card not found for id:", id);
+  }
 };
-export const List = ({getCard}) => (
+
+export const List = () => (
   <div className="list">
     <ul>
-      {list.map((listItem) => (
-        <Item key={listItem.id} {...listItem} getCard = {getCard} />
+      {list.map((listItem, index) => (
+        <Item
+          key={listItem.id}
+          {...listItem}
+          getCard={getCard}
+          number={index}
+        />
       ))}
     </ul>
   </div>
 );
 
-const EventExamples = () => {
-  const handleButtonClick = () => {
-    console.log("btn click!");
-  };
-};
+export default List;
